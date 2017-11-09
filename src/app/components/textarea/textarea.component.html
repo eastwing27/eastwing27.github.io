@@ -1,0 +1,12 @@
+<textarea
+    type="text"
+    class="form-control"
+    [(ngModel)]="userText"
+    (ngModelChange)="onTextChanged()"
+    name="userText"
+    id={{areaId}}
+    placeholder={{placeholder}}
+    rows=10
+    [disabled]="disabled=='true'"
+    (keyup)="onTextInput">
+</textarea>
